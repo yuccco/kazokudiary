@@ -38,7 +38,7 @@ jobs:
         run: npm run generate
       # Firebase にデプロイ
       - name: Deploy to Firebase
-        uses: yuccco/kazokudiary@main
+        uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting --project=${{ secrets.FIREBASE_PROJECT_ID }}
         env:
