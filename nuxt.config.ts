@@ -12,6 +12,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "家族ダイアリー",
+      htmlAttrs: {
+        lang: "ja",
+      },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -54,5 +57,11 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: "firebase",
+  },
+  runtimeConfig: {
+    newt: {
+      spaceUid: "",
+      cdnApiToken: "",
+    },
   },
 });

@@ -4,7 +4,7 @@
       ><h1
         class="flex items-center justify-center mt-16 mb-0 text-4xl text-center md:mt-24"
       >
-        <img src="~/assets/img/logo.svg" alt="家族ダイアリー" width="630" /></h1
+        <img src="~/assets/img/logo.svg" alt="家族ダイアリー" width="500" /></h1
     ></nuxt-link>
     <h2
       class="flex py-2 px-4 md:px-6 md:py-4 bg-sand rounded-[40px] justify-start items-center gap-3 mb-10 mt-10"
@@ -27,7 +27,7 @@
       <NuxtLink
         class="px-8 py-3 ml-0 rounded-full p text-cream bg-brown hover:bg-brownsub hover:drop-shadow-xl md:ml-4 md:mt-0"
         to="/"
-        >前のページに戻る</NuxtLink
+        >← 前のページに戻る</NuxtLink
       >
     </div>
   </div>

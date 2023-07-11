@@ -39,6 +39,5 @@
     </div>
     <Feature />
     <News />
-
   </div>
 </template>
