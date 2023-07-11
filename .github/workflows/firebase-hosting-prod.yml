@@ -33,13 +33,13 @@ jobs:
       # 以下、ssgの場合: ssg ビルド
       - name: Generate static page
         env:
-          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
-          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.kazokudiary }}
+          MICROCMS_API_KEY: ${{ secrets.PpMfE99br9BMplnaSr4lOABYK7lYxNhVmdbg }}
         run: npm run generate
       # Firebase にデプロイ
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only hosting --project=${{ secrets.FIREBASE_PROJECT_ID }}
+          args: deploy --only hosting --project=${{ secrets.kazokudiary-cat }}
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
