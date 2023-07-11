@@ -24,6 +24,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      # 依存パッケージのインストール
+      - name: Install Dependencies
+        run: npm install
       # プロジェクトごとの　npm のビルドコマンド
       - name: Build
         run: npm run generate
@@ -35,7 +38,7 @@ jobs:
         run: npm run generate
       # Firebase にデプロイ
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: yuccco/kazokudiary@main
         with:
           args: deploy --only hosting --project=${{ secrets.FIREBASE_PROJECT_ID }}
         env:
