@@ -34,7 +34,11 @@
         </div>
       </div>
       <div class="hidden w-1/5 md:jstify-center md:flex">
-        <img src="~/assets/img/main_cat02.png" alt="さいこうさん" width="230" />
+        <img
+          src="~/assets/img/main_cat02.png"
+          alt="さいこうさん!"
+          width="230"
+        />
       </div>
     </div>
     <Feature />
