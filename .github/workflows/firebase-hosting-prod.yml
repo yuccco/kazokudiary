@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
     steps:
       # リポジトリをチェックアウト
       - name: Checkout Repo
@@ -24,6 +24,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      # 依存パッケージのインストール
+      - name: Install Dependencies
+        run: npm install
       # プロジェクトごとの　npm のビルドコマンド
       - name: Build
         run: npm run generate
